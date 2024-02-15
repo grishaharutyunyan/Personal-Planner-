@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Calendar/cal.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <title>Calendar</title>
+</head>
+<body>
+	<style>
+		.fa-trash, .fa-check { 
+    pointer-events: none;
+}
+
+
+.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transition: 0.5s;
+    transform: translateY(45rem) rotateZ(45deg);
+    opacity: 0;
+}
+
+.back_home {
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.back_home:focus {
+    outline: none;
+}
+
+.back_home .fas {
+    color: #062e3f;
+}
+	</style>
+	<button class="back_home" onclick="window.location.href='/index.html'">
+		<a href="/index.html"><i class="fas fa-home"></i></a>
+	  </button>  
+<h1>February 2024</h1>
+<p>Add your ...</a>
+<ul>
+	<li><time datetime="2022-02-01">1</time>Exam JS</li>
+	<li><time datetime="2022-02-02">2</time> </li>
+	<li><time datetime="2022-02-03">3</time></li>
+	<li><time datetime="2022-02-04">4</time></li>
+	<li><time datetime="2022-02-05">5</time></li>
+	<li><time datetime="2022-02-06">6</time></li>
+	<li><time datetime="2022-02-07">7</time></li>
+	<li><time datetime="2022-02-08">8</time></li>
+	<li><time datetime="2022-02-09">9</time></li>
+	<li><time datetime="2022-02-10">10</time></li>
+	<li><time datetime="2022-02-11">11</time></li>
+	<li><time datetime="2022-02-12">12</time></li>
+	<li><time datetime="2022-02-13">13</time></li>
+	<li><time datetime="2022-02-14">14</time></li>
+	<li class="today"><time datetime="2022-02-15">15</time><br>Project Deadline</li>
+	<li><time datetime="2022-02-16">16</time></li>
+	<li><time datetime="2022-02-17">17</time></li>
+	<li><time datetime="2022-02-18">18</time></li>
+	<li><time datetime="2022-02-19">19</time></li>
+	<li><time datetime="2022-02-20">20</time>OOAD EXAM</li>
+	<li><time datetime="2022-02-21">21</time</li>
+	<li><time datetime="2022-02-22">22</time></li>
+	<li><time datetime="2022-02-23">23</time></li>
+	<li><time datetime="2022-02-24">24</time></li>
+	<li><time datetime="2022-02-25">25</time></li>
+	<li><time datetime="2022-02-26">26</time></li>
+	<li><time datetime="2022-02-27">27</time></li>
+	<li><time datetime="2022-02-28">28</time></li>
+</ul>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+var backButton = document.querySelector('.back_home');
+backButton.addEventListener('click', function(event) {
+	event.preventDefault(); 
+	window.location.href = '/index.html'; 
+});
+});
+
+</script>
+</body>
+</html>
